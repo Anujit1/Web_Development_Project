@@ -4,6 +4,65 @@
 
 <!-- The code -->
 
+<!DOCTYPE html>
+</head>
+<body>
+<div class="container">
+	<h1>Temperature Converter</h1> <!-- Heading for the converter -->
+	<div class="converter-row">
+		<div class="col">
+			<label>Fahrenheit</label> <!-- Label for Fahrenheit input field -->
+			<input type="number" id="fahrenheit"> <!-- Fahrenheit input field -->
+		</div>
+
+		<div class="col">
+			<label>Celsius</label> <!-- Label for Celsius input field -->
+			<input type="number" id="celsius"> <!-- Celsius input field -->
+		</div>
+
+		<div class="col">
+			<label>Kelvin</label> <!-- Label for Kelvin input field -->
+			<input type="number" id="kelvin"> <!-- Kelvin input field -->
+		</div>
+	</div>
+</div>
+
+<script>
+	// JavaScript code for temperature conversion
+	let celsius = document.getElementById('celsius');
+	let fahrenheit = document.getElementById('fahrenheit');
+	let kelvin = document.getElementById('kelvin');
+
+	// Celsius to Fahrenheit and Kelvin conversion
+	celsius.oninput = function () {
+		let f = (parseFloat(celsius.value) * 9) / 5 + 32; // Conversion formula for Fahrenheit
+		fahrenheit.value = parseFloat(f.toFixed(2)); // Display the result in Fahrenheit input field
+	
+		let k = (parseFloat(celsius.value) + 273.15); // Conversion formula for Kelvin
+		kelvin.value = parseFloat(k.toFixed(2)); // Display the result in Kelvin input field
+	}
+
+	// Fahrenheit to Celsius and Kelvin conversion
+	fahrenheit.oninput = function () {
+		let c = ((parseFloat(fahrenheit.value) - 32) * 5) / 9; // Conversion formula for Celsius
+		celsius.value = parseFloat(c.toFixed(2)); // Display the result in Celsius input field
+	
+		let k = (parseFloat(fahrenheit.value) - 32) * 5 / 9 + 273.15; // Conversion formula for Kelvin
+		kelvin.value = parseFloat(k.toFixed(2)); // Display the result in Kelvin input field
+	}
+
+	// Kelvin to Fahrenheit and Celsius conversion
+	kelvin.oninput = function () {
+		let f = (parseFloat(kelvin.value) - 273.15) * 9 / 5 + 32; // Conversion formula for Fahrenheit
+		fahrenheit.value = parseFloat(f.toFixed(2)); // Display the result in Fahrenheit input field
+	
+		let c = (parseFloat(kelvin.value) - 273.15); // Conversion formula for Celsius
+		celsius.value = parseFloat(c.toFixed(2)); // Display the result in Celsius input field
+	}
+</script>
+</body>
+</html>
+
 <style>
 	/* Styles for the page layout and design */
 	* {
@@ -77,63 +136,3 @@
 		}
 	}
 </style>
-
-
-
-</head>
-<body>
-<div class="container">
-	<h1>Temperature Converter</h1> <!-- Heading for the converter -->
-	<div class="converter-row">
-		<div class="col">
-			<label>Fahrenheit</label> <!-- Label for Fahrenheit input field -->
-			<input type="number" id="fahrenheit"> <!-- Fahrenheit input field -->
-		</div>
-
-		<div class="col">
-			<label>Celsius</label> <!-- Label for Celsius input field -->
-			<input type="number" id="celsius"> <!-- Celsius input field -->
-		</div>
-
-		<div class="col">
-			<label>Kelvin</label> <!-- Label for Kelvin input field -->
-			<input type="number" id="kelvin"> <!-- Kelvin input field -->
-		</div>
-	</div>
-</div>
-
-<script>
-	// JavaScript code for temperature conversion
-	let celsius = document.getElementById('celsius');
-	let fahrenheit = document.getElementById('fahrenheit');
-	let kelvin = document.getElementById('kelvin');
-
-	// Celsius to Fahrenheit and Kelvin conversion
-	celsius.oninput = function () {
-		let f = (parseFloat(celsius.value) * 9) / 5 + 32; // Conversion formula for Fahrenheit
-		fahrenheit.value = parseFloat(f.toFixed(2)); // Display the result in Fahrenheit input field
-	
-		let k = (parseFloat(celsius.value) + 273.15); // Conversion formula for Kelvin
-		kelvin.value = parseFloat(k.toFixed(2)); // Display the result in Kelvin input field
-	}
-
-	// Fahrenheit to Celsius and Kelvin conversion
-	fahrenheit.oninput = function () {
-		let c = ((parseFloat(fahrenheit.value) - 32) * 5) / 9; // Conversion formula for Celsius
-		celsius.value = parseFloat(c.toFixed(2)); // Display the result in Celsius input field
-	
-		let k = (parseFloat(fahrenheit.value) - 32) * 5 / 9 + 273.15; // Conversion formula for Kelvin
-		kelvin.value = parseFloat(k.toFixed(2)); // Display the result in Kelvin input field
-	}
-
-	// Kelvin to Fahrenheit and Celsius conversion
-	kelvin.oninput = function () {
-		let f = (parseFloat(kelvin.value) - 273.15) * 9 / 5 + 32; // Conversion formula for Fahrenheit
-		fahrenheit.value = parseFloat(f.toFixed(2)); // Display the result in Fahrenheit input field
-	
-		let c = (parseFloat(kelvin.value) - 273.15); // Conversion formula for Celsius
-		celsius.value = parseFloat(c.toFixed(2)); // Display the result in Celsius input field
-	}
-</script>
-</body>
-</html>
