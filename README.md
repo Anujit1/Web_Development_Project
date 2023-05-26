@@ -1,6 +1,3 @@
-# Web_Development_Project
-I have created this repository for website development projects. Basically it is like practice project for frontend web development to enhance my skills.
-
 🚀 Web Development Projects 🌐
 
 Welcome to the Web Development Projects repository! 🎉 This collection showcases a diverse range of web applications, websites, and interactive projects that highlight my skills and creativity in the field of web development. 💻✨
