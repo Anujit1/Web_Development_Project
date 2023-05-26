@@ -1,4 +1,4 @@
-The code provided is an HTML document that contains inline CSS styles and JavaScript code to create a Temperature Converter web application. Let's break it down section by section:
+This HTML document contains inline CSS styles and JavaScript code to create a Temperature Converter web application. Let's break it down section by section:
 
 CSS Styles:
 
