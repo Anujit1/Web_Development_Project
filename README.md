@@ -16,9 +16,11 @@ By exploring this collection of web development projects, you can gain a compreh
 
 Feel free to browse the projects, dive into the code, and discover the possibilities of modern web development with the Web Development Projects repository! 🕵️‍♀️👩‍💻💡
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 👀 Sneak peek  👇
 
 
-                              ![Screenshot](https://github.com/Anujit1/Web_Development_Project/assets/129964900/7c9c47c4-5361-466e-b872-2d263c9971e4)
+![Screenshot](https://github.com/Anujit1/Web_Development_Project/assets/129964900/d3fa79af-4db9-4f76-b775-840b683a0037)
 
