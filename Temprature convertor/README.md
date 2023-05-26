@@ -22,3 +22,6 @@ The same process occurs for the Fahrenheit and Kelvin input fields. When the Fah
   
   
  I hope that this description helped you to understant the above code.
+
+  ![Screenshot](https://github.com/Anujit1/Web_Development_Project/assets/129964900/ef60e5c7-110a-4c01-a89c-0f6d729b68eb)
+
