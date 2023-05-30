@@ -21,6 +21,10 @@ Feel free to browse the projects, dive into the code, and discover the possibili
 
 👀 Sneak peek  👇
 
-
+♦️
 ![Screenshot](https://github.com/Anujit1/Web_Development_Project/assets/129964900/d3fa79af-4db9-4f76-b775-840b683a0037)
+
+♦️
+![Screenshot 2023-05-30 112732](https://github.com/Anujit1/Web_Development_Project/assets/129964900/5fe698e2-a482-417e-a2f1-e70e7f89a9ec)
+
 
