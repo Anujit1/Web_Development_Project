@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.calculator {
+    width: 220px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.display {
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+input[type="text"] {
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+    text-align: right;
+    border: none;
+    outline: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.operator {
+    background-color: #f1f1f1;
+}
+
+/* Customize the grid arrangement */
+button:nth-child(1) { grid-area: 1 / 1 / 1 / 3; } /* "C" button spans two columns */
+button:nth-child(2) { grid-area: 1 / 3 / 1 / 5; } /* "CE" button spans two columns */
+button:nth-child(3) { grid-area: 2 / 1 / 2 / 2; } /* "7" button */
+button:nth-child(4) { grid-area: 2 / 2 / 2 / 3; } /* "8" button */
+button:nth-child(5) { grid-area: 2 / 3 / 2 / 4; } /* "9" button */
+button:nth-child(6) { grid-area: 2 / 4 / 2 / 5; } /* "/" button */
+button:nth-child(7) { grid-area: 3 / 1 / 3 / 2; } /* "4" button */
+button:nth-child(8) { grid-area: 3 / 2 / 3 / 3; } /* "5" button */
+button:nth-child(9) { grid-area: 3 / 3 / 3 / 4; } /* "6" button */
+button:nth-child(10) { grid-area: 3 / 4 / 3 / 5; } /* "*" button */
+button:nth-child(11) { grid-area: 4 / 1 / 4 / 2; } /* "1" button */
+button:nth-child(12) { grid-area: 4 / 2 / 4 / 3; } /* "2" button */
+button:nth-child(13) { grid-area: 4 / 3 / 4 / 4; } /* "3" button */
+button:nth-child(14) { grid-area: 4 / 4 / 4 / 5; } /* "-" button */
+button:nth-child(15) { grid-area: 5 / 1 / 5 / 2; } /* "0" button */
+button:nth-child(16) { grid-area: 5 / 2 / 5 / 3; } /* "." button */
+button:nth-child(17) { grid-area: 5 / 3 / 5 / 4; } /* "=" button */
+button:nth-child(18) { grid-area: 5 / 4 / 5 / 5; } /* "+" button */
